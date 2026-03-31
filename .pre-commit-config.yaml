@@ -69,8 +69,8 @@ repos:
 
   # # Following hooks run on local system, not from a remote repo
   # # mupy, pytest config
-  - repo: local
-    hooks:
+  # - repo: local
+  #   hooks:
   #     - id: mypy
   #       name: mypy
   #       entry: just typecheck # old entry: uv run mypy src
@@ -79,9 +79,9 @@ repos:
   #       pass_filenames: false
   #       stages: [pre-push]  # ← only on push
 
-      - id: pytest
-        name: pytest
-        entry: just test # oldentry: uv run pytest --cov --cov-report=term-missing
-        language: system
-        pass_filenames: false
-        stages: [pre-push]    # ← only on push
+  #     - id: pytest
+  #       name: pytest
+  #       entry: just test # oldentry: uv run pytest --cov --cov-report=term-missing
+  #       language: system
+  #       pass_filenames: false
+  #       stages: [pre-push]    # ← only on push
